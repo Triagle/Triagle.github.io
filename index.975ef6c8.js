@@ -727,8 +727,8 @@ function resetBoard(plotType) {
     polyheader.innerText = `Root Plot for P(w, z) = ${polyStrings[plotType]}`;
     board.on("update", function() {
         if (z1.X() ** 2 + z1.Y() ** 2 < 1e-1) {
-            let idx = matchRoots(initial_roots, rootPoints.map((p)=>Complex(p.X(), p.Y())
-            ));
+            let idx = matchRoots(rootPoints.map((p)=>Complex(p.X(), p.Y())
+            ), initial_roots);
             let el = document.getElementById("permutation");
             let rootSet = new Set(idx);
             console.log(rootSet);
