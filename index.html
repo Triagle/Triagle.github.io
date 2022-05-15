@@ -1,1 +1,38 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="index.5056ca36.css"><title>Galois Group Demo</title></head><body> <h2 id="polynomial-header"></h2> <fieldset> <legend>Select a Galois group</legend> <div> <input type="radio" id="symmetric" name="plotType" value="symmetric" checked> <label for="symmetric">S_4</label> <input type="radio" id="alternating" name="plotType" value="alternating"> <label for="alternating">A_4</label> <input type="radio" id="dihedral" name="plotType" value="dihedral"> <label for="dihedral">D_4</label> <input type="radio" id="klein" name="plotType" value="klein"> <label for="klein">K_4</label> <input type="radio" id="cyclic" name="plotType" value="cyclic"> <label for="cyclic">C_4</label> </div> </fieldset> <div id="roots" class="jxgbox"></div> <script src="index.07be96b9.js" type="module"></script> </body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/index.61d3354a.css">
+
+    <title>Galois Group Demo</title>
+</head>
+
+<body>
+    <h2 id="polynomial-header"></h2>
+    <fieldset>
+        <legend>Select a Galois group</legend>
+        <div>
+            <input type="radio" id="symmetric" name="plotType" value="symmetric" checked="true">
+            <label for="symmetric">S_4</label>
+            <input type="radio" id="alternating" name="plotType" value="alternating">
+            <label for="alternating">A_4</label>
+            <input type="radio" id="dihedral" name="plotType" value="dihedral">
+            <label for="dihedral">D_4</label>
+            <input type="radio" id="klein" name="plotType" value="klein">
+            <label for="klein">K_4</label>
+            <input type="radio" id="cyclic" name="plotType" value="cyclic">
+            <label for="cyclic">C_4</label>
+        </div>
+    </fieldset>
+    <p>Root permutation: <span id="permutation"></span></p>
+    <div id="roots" class="jxgbox"></div>
+    <p>To use this demo, drag the <i>z</i> point, to change the <i>z</i> variable in the polynomial <i>P(w, z)</i>. As you do this, the code is repeatedly finding the roots of <i>P(w, z)</i> via Newtons method.
+        Dragging <i>z</i> around the "bad points", abbreviated BP on the diagram, the roots should undergo a permutation. The permutation is shown above the diagram.
+    </p>
+    <script src="/index.975ef6c8.js" defer=""></script>
+</body>
+
+</html>
